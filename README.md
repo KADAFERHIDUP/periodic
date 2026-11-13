@@ -2,6 +2,8 @@
 
 Tabel periodik 118 unsur dalam 3D yang bisa berubah susunan: **tabel**, **bola**, **heliks**, dan **grid**.
 
+Live: https://periodic.kadaferhidup.my.id
+
 ## Fitur
 
 - Animasi perpindahan susunan yang halus, tiap unsur bergerak bergantian
