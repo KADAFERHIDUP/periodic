@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Periodic · Tabel Periodik 3D</title>
+  <meta name="description" content="Tabel periodik 118 unsur dalam 3D. Ubah susunan jadi tabel, bola, heliks, atau grid, lalu klik unsur untuk melihat detailnya.">
+  <meta name="theme-color" content="#09090b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="scene" aria-label="Tabel periodik 3D">
+    <div id="world"></div>
+  </main>
+
+  <header class="top">
+    <div class="brand">
+      <b>Periodic</b>
+      <span>118 unsur · 3D</span>
+    </div>
+    <label class="search">
+      <span class="sr-only">Cari unsur</span>
+      <input id="q" type="search" placeholder="Cari: Fe, emas, 79" autocomplete="off" spellcheck="false">
+    </label>
+  </header>
+
+  <div class="legend" id="legend" aria-label="Keterangan warna"></div>
+
+  <nav class="controls" aria-label="Pengaturan tampilan">
+    <div class="group" role="group" aria-label="Susunan">
+      <button class="toggle is-active" data-layout="table" aria-pressed="true">tabel</button>
+      <button class="toggle" data-layout="sphere" aria-pressed="false">bola</button>
+      <button class="toggle" data-layout="helix" aria-pressed="false">heliks</button>
+      <button class="toggle" data-layout="grid" aria-pressed="false">grid</button>
+    </div>
+    <div class="group" role="group" aria-label="Warna">
+      <button class="toggle is-active" data-color="cat" aria-pressed="true">kategori</button>
+      <button class="toggle" data-color="block" aria-pressed="false">blok</button>
+      <button class="toggle" data-color="state" aria-pressed="false">wujud</button>
+    </div>
+    <div class="group" role="group" aria-label="Kamera">
+      <button class="toggle is-active" id="spin" aria-pressed="true" title="Putar otomatis">putar</button>
+      <button class="toggle" id="reset" title="Kembalikan sudut pandang">reset</button>
+    </div>
+  </nav>
+
+  <p class="hint" id="hint">geser untuk memutar · scroll atau cubit untuk zoom · klik unsur untuk detail</p>
+
+  <aside class="info" id="info" aria-live="polite" hidden>
+    <button class="close" id="close" aria-label="Tutup">×</button>
+    <div class="info-tile" id="info-tile"></div>
+    <div class="info-body" id="info-body"></div>
+  </aside>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
