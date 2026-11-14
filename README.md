@@ -33,8 +33,4 @@ python -m http.server 8000
 # buka http://localhost:8000
 ```
 
-Terinspirasi dari demo tabel periodik 3D karya Julian Garnier di CodePen dan contoh CSS3D three.js. Kode di sini ditulis ulang dari awal.
-
----
-
 Dibuat oleh Ahmad Umraithi
